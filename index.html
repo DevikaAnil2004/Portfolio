@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Devika Anil — QA Engineer crafting quality into every line of code. Selenium, TestNG, JIRA specialist based in Kottayam, Kerala.">
+    <title>Devika Anil — QA Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor follower (desktop) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!--  TOPBAR NAVIGATION                          -->
+    <!-- ════════════════════════════════════════════ -->
+    <header class="topbar">
+      <a href="#" class="topbar-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Devika Anil</span>
+      </a>
+
+      <nav class="topbar-nav" id="mainNav">
+        <a href="#story">Story</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#workshop">Workshop</a>
+        <a href="#lab">Lab</a>
+        <a href="#connect">Say Hello</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a href="#connect" class="nav-cta-btn">Let's Connect →</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-container">
+      <!-- ════════════════════════════════════════════ -->
+      <!--  HERO SECTION                               -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="hero-section" id="hero">
+        <div class="hero-main-grid">
+          <!-- Left Column: Title & CTAs -->
+          <div class="hero-left" data-reveal>
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>QUALITY ADVOCATE</span>
+            </div>
+
+            <h1 class="hero-heading">
+              I break things<br>
+              <span class="heading-accent">so users don’t have to.</span>
+            </h1>
+
+            <p class="hero-description">
+              I'm Devika Anil, a QA Engineer passionate about building reliable, user-friendly products through thoughtful testing, curiosity and collaboration.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#connect" class="btn-primary">Let's Connect →</a>
+              <a href="https://linkedin.com/in/devika-anil-411853257" target="_blank" rel="noopener" class="btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 10.74v-8.37H5.06v8.37h2.8z"/>
+                </svg>
+                <span>LinkedIn ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Framed Portrait, Sparks, Handwritten Script, Badge -->
+          <div class="hero-right" data-reveal>
+            <!-- Decorative organic peach blob backdrop -->
+            <div class="photo-backdrop-blob"></div>
+
+            <!-- Radiating spark accent lines \ | / -->
+            <svg class="spark-lines" width="60" height="54" viewBox="0 0 60 54" fill="none">
+              <line x1="8" y1="46" x2="2" y2="34" stroke="#DE5C3B" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="28" y1="36" x2="26" y2="12" stroke="#DE5C3B" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="48" y1="40" x2="56" y2="24" stroke="#DE5C3B" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+
+            <!-- Portrait Frame -->
+            <div class="portrait-card">
+              <img src="/images/profile.jpg" alt="Devika Anil — QA Engineer" class="portrait-img" />
+            </div>
+
+            <!-- Floating Target Pill Badge -->
+            <div class="floating-badge">
+              <div class="badge-target-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="badge-text-group">
+                <span class="badge-title">Better Products</span>
+                <span class="badge-sub">Happier Users</span>
+              </div>
+              <a href="#workshop" class="badge-arrow-btn" aria-label="View Workshop">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Handwritten Signature note on right -->
+            <div class="handwritten-signature">
+              <div class="signature-text">Devika</div>
+              <div class="signature-text-sub">Anil <span class="signature-heart">♡</span></div>
+              <svg class="signature-swoosh" width="64" height="16" viewBox="0 0 64 16" fill="none">
+                <path d="M4 12C20 4 44 4 60 10" stroke="#DE5C3B" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Stat Cards Row -->
+        <div class="hero-stats-row" data-reveal>
+          <!-- Stat 1: Internships -->
+          <div class="stat-card stat-peach">
+            <div class="stat-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+          </div>
+
+          <!-- Stat 2: Certifications -->
+          <div class="stat-card stat-mint">
+            <div class="stat-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number" data-count="13">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+
+          <!-- Stat 3: Projects -->
+          <div class="stat-card stat-blue">
+            <div class="stat-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number" data-count="4">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech & Tools Strip -->
+        <div class="tech-strip-container" data-reveal>
+          <div class="tech-strip-header">
+            <span class="tech-line"></span>
+            <span class="tech-strip-title">TECH &amp; TOOLS I WORK WITH</span>
+            <span class="tech-line"></span>
+          </div>
+
+          <div class="tech-chips-row">
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Test Planning</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
+                <path d="m13 13 6 6"></path>
+              </svg>
+              <span>Manual Testing</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>Automation</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <span>API Testing</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="8" height="14" x="8" y="6" rx="4"></rect>
+                <path d="m19 7-3 2"></path>
+                <path d="m5 7 3 2"></path>
+                <path d="m19 19-3-2"></path>
+                <path d="m5 19 3-2"></path>
+                <path d="M20 13h-4"></path>
+                <path d="M4 13h4"></path>
+                <path d="m10 4 1 2"></path>
+                <path d="m14 4-1 2"></path>
+              </svg>
+              <span>Bug Tracking</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#0052CC">
+                <path d="M11.53 2c0 2.4 1.97 4.35 4.4 4.35h3.63V2.7c0-.39-.32-.7-.7-.7h-7.33zm-2.9 4.35c0 2.4 1.96 4.35 4.39 4.35h3.63V7.05a.7.7 0 0 0-.7-.7H8.63zm-2.9 4.36c0 2.4 1.96 4.35 4.39 4.35h3.63v-3.65a.7.7 0 0 0-.7-.7H5.73zM2 15.06c0 2.4 1.96 4.35 4.39 4.35h3.64v-3.65a.7.7 0 0 0-.7-.7H2.7a.7.7 0 0 0-.7.7z"/>
+              </svg>
+              <span>Jira</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#FF6C37">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M7 12l10-5-5 10-1-4-4-1z" fill="#ffffff"></path>
+              </svg>
+              <span>Postman</span>
+            </div>
+
+            <div class="tech-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              <span>SQL</span>
+            </div>
+
+            <a href="#toolkit" class="tech-chip chip-more">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>More</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dark Banner: Habit Quote + Core Traits -->
+        <div class="dark-quote-banner" data-reveal>
+          <div class="quote-left">
+            <span class="quote-mark">“</span>
+            <div class="quote-content">
+              <p class="quote-text">Quality is not an act, it is a habit.”</p>
+              <div class="quote-line"></div>
+            </div>
+          </div>
+
+          <div class="traits-right">
+            <div class="trait-item">
+              <div class="trait-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+                </svg>
+              </div>
+              <div class="trait-text">
+                <strong>Curious</strong>
+                <span>by nature</span>
+              </div>
+            </div>
+
+            <div class="trait-divider"></div>
+
+            <div class="trait-item">
+              <div class="trait-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="trait-text">
+                <strong>Collaborative</strong>
+                <span>in approach</span>
+              </div>
+            </div>
+
+            <div class="trait-divider"></div>
+
+            <div class="trait-item">
+              <div class="trait-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <div class="trait-text">
+                <strong>User-first</strong>
+                <span>always</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  CHAPTER 01 — THE STORY                     -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="chapter-section" id="story">
+        <div class="chapter-header" data-reveal>
+          <div class="chapter-badge">
+            <span class="badge-num">01</span>
+            <span>ABOUT &amp; BACKGROUND</span>
+          </div>
+          <h2 class="chapter-title">The Story</h2>
+          <p class="chapter-subtitle">Bridging engineering discipline with a keen eye for user delight.</p>
+        </div>
+
+        <div class="story-grid">
+          <!-- Left Bio Card -->
+          <div class="story-bio-card" data-reveal>
+            <div class="bio-quote-container">
+              <span class="bio-quote-mark">“</span>
+              <p class="bio-quote">
+                I don’t just find bugs — I help teams build confidence in every deployment.
+              </p>
+            </div>
+            <p class="bio-text">
+              I am an Integrated MCA graduate from Saintgits College of Engineering with hands-on internship experience in automated testing with Selenium WebDriver &amp; TestNG, data science, and web development.
+            </p>
+            <p class="bio-text">
+              My engineering philosophy revolves around prevention over remediation: integrating testing early into the STLC, advocating for clear acceptance criteria, and ensuring software feels effortless to real people.
+            </p>
+
+            <div class="bio-chips">
+              <div class="bio-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Kottayam, Kerala</span>
+              </div>
+              <div class="bio-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m2 12 20 0"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>English · Malayalam · Tamil</span>
+              </div>
+              <div class="bio-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>QA &amp; Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Education Stack -->
+          <div class="education-stack" data-reveal>
+            <h3 class="stack-heading">Academic Journey</h3>
+
+            <div class="edu-card card-highlight">
+              <div class="edu-top">
+                <span class="edu-degree">Integrated MCA</span>
+                <span class="edu-badge badge-peach">CGPA 6.59</span>
+              </div>
+              <p class="edu-school">Saintgits College of Engineering, Kottayam</p>
+              <div class="edu-footer">
+                <span class="edu-year">2022 – 2027</span>
+                <span class="edu-tag">Computer Applications &amp; QA</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-degree">Higher Secondary (Science)</span>
+                <span class="edu-badge badge-mint">80%</span>
+              </div>
+              <p class="edu-school">SKMHSS Kumarakom</p>
+              <div class="edu-footer">
+                <span class="edu-year">2020 – 2022</span>
+                <span class="edu-tag">Bio-Maths Stream</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-degree">Secondary School Leaving Certificate</span>
+                <span class="edu-badge badge-blue">100% Perfect Score</span>
+              </div>
+              <p class="edu-school">SKMHSS Kumarakom</p>
+              <div class="edu-footer">
+                <span class="edu-year">2020</span>
+                <span class="edu-tag">State Board Topper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  CHAPTER 02 — THE TOOLKIT                   -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="chapter-section" id="toolkit">
+        <div class="chapter-header" data-reveal>
+          <div class="chapter-badge">
+            <span class="badge-num">02</span>
+            <span>SKILLS &amp; ARSENAL</span>
+          </div>
+          <h2 class="chapter-title">The Toolkit</h2>
+          <p class="chapter-subtitle">A balanced repertoire of testing frameworks, languages, and quality tools.</p>
+        </div>
+
+        <div class="toolkit-grid">
+          <!-- Testing & QA Card -->
+          <div class="toolkit-card primary-toolkit" data-reveal>
+            <div class="toolkit-card-header">
+              <div class="toolkit-icon-pill icon-terracotta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <h3>Testing &amp; QA Mastery</h3>
+            </div>
+            <p class="toolkit-desc">Core competencies across test design, automation pipelines, and defect governance.</p>
+            <div class="pill-cloud">
+              <span class="pill-item pill-accent">Selenium WebDriver</span>
+              <span class="pill-item pill-accent">TestNG Framework</span>
+              <span class="pill-item pill-accent">Jira Bug Tracking</span>
+              <span class="pill-item pill-accent">Manual Testing</span>
+              <span class="pill-item">STLC &amp; SDLC</span>
+              <span class="pill-item">Maven Build</span>
+              <span class="pill-item">Test Case Design</span>
+              <span class="pill-item">Regression Testing</span>
+              <span class="pill-item">Defect Lifecycle</span>
+              <span class="pill-item">API Verification</span>
+            </div>
+          </div>
+
+          <!-- Languages Card -->
+          <div class="toolkit-card" data-reveal>
+            <div class="toolkit-card-header">
+              <div class="toolkit-icon-pill icon-mint">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Languages</h3>
+            </div>
+            <p class="toolkit-desc">Solid programming foundation for crafting automation scripts and data routines.</p>
+            <div class="pill-cloud">
+              <span class="pill-item pill-green">Java</span>
+              <span class="pill-item pill-green">Python</span>
+              <span class="pill-item pill-green">SQL</span>
+              <span class="pill-item">JavaScript</span>
+              <span class="pill-item">HTML5 / CSS3</span>
+              <span class="pill-item">C / C++</span>
+            </div>
+          </div>
+
+          <!-- Tools & Databases Card -->
+          <div class="toolkit-card" data-reveal>
+            <div class="toolkit-card-header">
+              <div class="toolkit-icon-pill icon-blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Databases &amp; Environments</h3>
+            </div>
+            <p class="toolkit-desc">Productivity ecosystems, relational databases, and collaborative platforms.</p>
+            <div class="pill-cloud">
+              <span class="pill-item pill-blue">MySQL</span>
+              <span class="pill-item pill-blue">SQL Server</span>
+              <span class="pill-item pill-blue">Postman</span>
+              <span class="pill-item">Git &amp; GitHub</span>
+              <span class="pill-item">VS Code</span>
+              <span class="pill-item">Eclipse IDE</span>
+              <span class="pill-item">Linux</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  CHAPTER 03 — THE WORKSHOP                  -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="chapter-section" id="workshop">
+        <div class="chapter-header" data-reveal>
+          <div class="chapter-badge">
+            <span class="badge-num">03</span>
+            <span>EXPERIENCE &amp; INTERNSHIPS</span>
+          </div>
+          <h2 class="chapter-title">The Workshop</h2>
+          <p class="chapter-subtitle">Real-world engineering internships applying test frameworks and data insights.</p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Internship 1 -->
+          <div class="exp-card-modern" data-reveal>
+            <div class="exp-aside">
+              <span class="exp-date-pill">May – Jul 2025</span>
+              <span class="exp-location-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Kochi, Kerala
+              </span>
+            </div>
+
+            <div class="exp-body">
+              <div class="exp-title-row">
+                <h3 class="exp-role">Software Testing Intern</h3>
+                <span class="exp-company">Wahy Lab Solutions</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Executed thorough manual and automated test suites on responsive web platforms to ensure functional fidelity.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Authored and maintained modular Selenium WebDriver test scripts with TestNG assertions and data-driven fixtures.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Identified edge cases, logged high-severity defects with repro steps in Jira, and tracked fixes through closure.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Actively participated in daily standups, sprint reviews, and STLC best-practice retrospectives.</span>
+                </li>
+              </ul>
+              <div class="exp-chips">
+                <span>Selenium</span>
+                <span>TestNG</span>
+                <span>Manual Testing</span>
+                <span>JIRA</span>
+                <span>STLC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="exp-card-modern" data-reveal>
+            <div class="exp-aside">
+              <span class="exp-date-pill">May – Jun 2025</span>
+              <span class="exp-location-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Kochi, Kerala
+              </span>
+            </div>
+
+            <div class="exp-body">
+              <div class="exp-title-row">
+                <h3 class="exp-role">Data Science Intern</h3>
+                <span class="exp-company">Edure Learning</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Conducted data cleaning, exploratory data analysis (EDA), and normalization routines using Python and Pandas.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Transformed raw tabular datasets into actionable visual dashboards to reveal key statistical trends.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Applied foundational machine learning classification models and evaluated accuracy benchmarks.</span>
+                </li>
+              </ul>
+              <div class="exp-chips">
+                <span>Python</span>
+                <span>Data Analysis</span>
+                <span>Machine Learning</span>
+                <span>Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship 3 -->
+          <div class="exp-card-modern" data-reveal>
+            <div class="exp-aside">
+              <span class="exp-date-pill">Jun – Jul 2024</span>
+              <span class="exp-location-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Kottayam, Kerala
+              </span>
+            </div>
+
+            <div class="exp-body">
+              <div class="exp-title-row">
+                <h3 class="exp-role">Software Development Intern</h3>
+                <span class="exp-company">Tisser Technologies</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Assisted full-stack engineers in web application feature maintenance and bug remediation sprints.</span>
+                </li>
+                <li>
+                  <span class="bullet-check">✓</span>
+                  <span>Constructed normalized SQL database schemas and optimized CRUD query operations.</span>
+                </li>
+              </ul>
+              <div class="exp-chips">
+                <span>Web Development</span>
+                <span>SQL</span>
+                <span>Database Design</span>
+                <span>Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  CHAPTER 04 — THE LAB                       -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="chapter-section" id="lab">
+        <div class="chapter-header" data-reveal>
+          <div class="chapter-badge">
+            <span class="badge-num">04</span>
+            <span>PROJECTS &amp; CREDENTIALS</span>
+          </div>
+          <h2 class="chapter-title">The Lab</h2>
+          <p class="chapter-subtitle">Featured projects and industry-recognized certifications.</p>
+        </div>
+
+        <div class="lab-layout-grid">
+          <!-- Left: 4 Projects -->
+          <div class="lab-projects-column" data-reveal>
+            <h3 class="column-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>
+              Featured Applications
+            </h3>
+
+            <div class="projects-list">
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-badge">Full Stack &amp; QA</span>
+                  <span class="project-num">01</span>
+                </div>
+                <h4>Student Record Management</h4>
+                <p>Complete academic portal enabling faculty to track enrollments, grades, attendance, and generate verified performance transcripts.</p>
+                <div class="project-meta">
+                  <span>Python / Django</span>
+                  <span>MySQL</span>
+                  <span>Test Cases</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-badge">Database &amp; Inventory</span>
+                  <span class="project-num">02</span>
+                </div>
+                <h4>Library Management System</h4>
+                <p>Streamlined cataloging and circulation tracking system with automated fine calculation and book reservation triggers.</p>
+                <div class="project-meta">
+                  <span>Java</span>
+                  <span>SQL Server</span>
+                  <span>CRUD Logic</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-badge">Automation Logic</span>
+                  <span class="project-num">03</span>
+                </div>
+                <h4>Employee Payroll System</h4>
+                <p>Payroll computation engine incorporating tax brackets, leave deductions, net salary disbursement, and audit-ready pay slips.</p>
+                <div class="project-meta">
+                  <span>Java</span>
+                  <span>Relational DB</span>
+                  <span>Automated Calculations</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <span class="project-badge">FinTech Simulation</span>
+                  <span class="project-num">04</span>
+                </div>
+                <h4>Banking Management System</h4>
+                <p>Secure financial simulator implementing atomic balance transfers, transaction logs, interest accruals, and overdraft protection.</p>
+                <div class="project-meta">
+                  <span>C++ / SQL</span>
+                  <span>Transaction Security</span>
+                  <span>Boundary Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 13 Certifications -->
+          <div class="lab-certs-column" data-reveal>
+            <h3 class="column-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+              13 Verified Certifications
+            </h3>
+
+            <div class="certs-container">
+              <div class="cert-category-label">IBM Cloud</div>
+              <div class="cert-group">
+                <div class="cert-tile"><span class="cert-tag ibm-tag">IBM</span>Introduction to Cloud</div>
+                <div class="cert-tile"><span class="cert-tag ibm-tag">IBM</span>Cloud Essentials V3</div>
+              </div>
+
+              <div class="cert-category-label">Cybersecurity</div>
+              <div class="cert-group">
+                <div class="cert-tile"><span class="cert-tag gl-tag">Great Learning</span>Ethical Hacking</div>
+              </div>
+
+              <div class="cert-category-label">Infosys Springboard AI &amp; Data</div>
+              <div class="cert-group">
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Data Science</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Artificial Intelligence</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Natural Language Processing (NLP)</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Computer Vision 101</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Deep Learning</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Robotic Process Automation (RPA)</div>
+                <div class="cert-tile"><span class="cert-tag ify-tag">Infosys</span>Python Basics</div>
+              </div>
+
+              <div class="cert-category-label">Web &amp; Modern Tools</div>
+              <div class="cert-group">
+                <div class="cert-tile"><span class="cert-tag st-tag">ShapeMySkills</span>Bootstrap Framework</div>
+                <div class="cert-tile"><span class="cert-tag ml-tag">MindLuster</span>Mobile Web Development</div>
+                <div class="cert-tile"><span class="cert-tag ml-tag">MindLuster</span>ChatGPT with PDF Integration</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  EXTRA HIGHLIGHTS MARQUEE                   -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="marquee-wrapper" id="extras">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <span class="marquee-badge">🎪 Event Coordinator — Star of Saintgits</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">💻 5-Day Intensive Django Workshop</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">🗣️ English · Malayalam · Tamil</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">🎯 100% SSLC Academic Distinction</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">⚡ Test Automation with Selenium &amp; TestNG</span>
+            <span class="marquee-star">✦</span>
+          </div>
+          <div class="marquee-content" aria-hidden="true">
+            <span class="marquee-badge">🎪 Event Coordinator — Star of Saintgits</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">💻 5-Day Intensive Django Workshop</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">🗣️ English · Malayalam · Tamil</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">🎯 100% SSLC Academic Distinction</span>
+            <span class="marquee-star">✦</span>
+            <span class="marquee-badge">⚡ Test Automation with Selenium &amp; TestNG</span>
+            <span class="marquee-star">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SAY HELLO — CONNECT SECTION                -->
+      <!-- ════════════════════════════════════════════ -->
+      <footer class="connect-section" id="connect">
+        <div class="connect-inner-box" data-reveal>
+          <div class="connect-top">
+            <div class="connect-heading-group">
+              <span class="hero-badge badge-invert">
+                <span class="badge-dot dot-terracotta"></span>
+                <span>GET IN TOUCH</span>
+              </span>
+              <h2 class="connect-title">Let’s build<br><span class="heading-accent">something reliable.</span></h2>
+              <p class="connect-sub">
+                Open to full-time QA Engineer, SDET, and Software Testing roles. Let's discuss how I can help your team ship bug-free software with confidence.
+              </p>
+            </div>
+
+            <div class="connect-cards-grid">
+              <a href="mailto:devikaanilkrm@gmail.com" class="connect-card-item">
+                <div class="connect-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="connect-card-text">
+                  <span class="connect-card-label">Email</span>
+                  <span class="connect-card-val">devikaanilkrm@gmail.com</span>
+                </div>
+                <span class="connect-card-arrow">→</span>
+              </a>
+
+              <a href="https://linkedin.com/in/devika-anil-411853257" target="_blank" rel="noopener" class="connect-card-item">
+                <div class="connect-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 10.74v-8.37H5.06v8.37h2.8z"/>
+                  </svg>
+                </div>
+                <div class="connect-card-text">
+                  <span class="connect-card-label">LinkedIn</span>
+                  <span class="connect-card-val">devika-anil-411853257 ↗</span>
+                </div>
+                <span class="connect-card-arrow">→</span>
+              </a>
+
+              <a href="tel:+919895645647" class="connect-card-item">
+                <div class="connect-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="connect-card-text">
+                  <span class="connect-card-label">Phone</span>
+                  <span class="connect-card-val">+91 9895645647</span>
+                </div>
+                <span class="connect-card-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="connect-bottom-bar">
+            <span>© 2026 Devika Anil · Crafted with Quality &amp; Care</span>
+            <span class="location-stamp">Kottayam, Kerala, India</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Floating Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
